@@ -37,7 +37,8 @@ let renderPage = async () => {
 };
 
 let addPet = async () => {
-  //Ladda upp bild
+
+  //1. Ladda upp bild
   let imgFile = petImage.files;
   let formData = new FormData();
   formData.append("files", imgFile[0]);
@@ -49,7 +50,7 @@ let addPet = async () => {
       },
     })
     .then((response) => {
-      //Skapa Pet
+      //2. Skapa Pet och koppla bilden samt användare till den.
       axios.post(
         "http://localhost:1337/api/pets",
         {
