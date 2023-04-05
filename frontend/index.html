@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Strapi Pets</h1>
+    <h2>Login</h2>
+    <input type="text" id="identifier" />
+    <input type="text" id="password" />
+    <button id="login">Login</button>
+    <hr />
+    <h2>Add pet</h2>
+    <input type="text" placeholder="Name" id="petName" />
+    <input type="file" id="petImage" />
+    <button id="addPet">Add pet</button>
+    <hr />
+    <h2>My pets</h2>
+    <ul id="petList"></ul>
+  </body>
+</html>
